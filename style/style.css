@@ -6,6 +6,10 @@
     font-family: lato;
     src: url(/fonts/Lato/Lato-Regular.ttf);
 }
+@font-face {
+    font-family: lato-bold;
+    src: url(/fonts/Lato/Lato-Bold.ttf);
+}
 
 @font-face {
     font-family: eurofurence;
@@ -55,10 +59,13 @@ img {
 }
 
 .logo {
-    font-family: eurofurence;
+    font-family: eurofurence, sans-serif;
     font-size: 2.5rem;
-    letter-spacing: 0.8;
+    letter-spacing: -0.8px;
     font-weight: 400;
+    line-height: 0.8;
+    height: 33px;
+    width: 85px;
 }
 
 .logo-header {
@@ -191,14 +198,19 @@ img {
 }
 
 .logo-footer {
-    padding: 80px 0px 30px 0px;
+    padding: 75px 0px 50px 0px;
 }
 
 .footer-copyright {
     letter-spacing: 0.39px;
     color: #a6a6a6;
-    padding-bottom: 36px;
     font-size: 0.8125rem;
+    /* height: 12px; */
+    padding-bottom: 20px;
+}
+.footer-copyright span{
+    font-family: lato-bold;
+    font-weight: 700;
 }
 
 .footer-social-links a {
@@ -213,22 +225,19 @@ img {
     color: #fff;
 }
 
-
-
-
-.footer-social-links .facebook:hover{
+.footer-social-links .facebook:hover {
     background-color: #4267B2;
 }
 
-.footer-social-links .twitter:hover{
+.footer-social-links .twitter:hover {
     background-color: #1DA1F2;
 }
 
-.footer-social-links .behance:hover{
+.footer-social-links .behance:hover {
     background-color: #053eff;
 }
 
-.footer-social-links .dribbble:hover{
+.footer-social-links .dribbble:hover {
     background-color: #e94c88;
 }
 
