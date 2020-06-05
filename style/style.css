@@ -223,6 +223,10 @@ img {
     display: block;
     text-align: center;
     color: #fff;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
 }
 
 .footer-social-links .facebook:hover {
