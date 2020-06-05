@@ -148,15 +148,21 @@ img {
     letter-spacing: 0.48px;
     padding: 0rem;
     cursor: pointer;
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
 }
 
 .card-read-more-btn:hover {
     color: #58c93a;
     border: 2px solid #58c93a;
+    width: 210px;
 }
 
 .card-read-more-btn span#regular {
     display: inline;
+
 }
 
 .card-read-more-btn:hover span#regular {
@@ -165,10 +171,12 @@ img {
 
 .card-read-more-btn span#hover {
     display: none;
+    
 }
 
 .card-read-more-btn:hover span#hover {
     display: inline;
+    
 }
 
 .cards-pagination {
