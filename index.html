@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/c63920a58d.js" crossorigin="anonymous"></script>
+
     <title>Design To Live Page</title>
 </head>
 
 <body>
     <header class="main-header">
-        <div class="main-header-content container flex space-between align-center ">
-            <div class="logo logo-header flex ">Blogin<span class="logo-dot">.</span>
+        <div class="main-header-content flex space-between align-center ">
+            <div class="logo logo-header flex "><a href="#">Blogin<span class="logo-dot">.</a></span>
             </div>
 
             <ul class="main-nav clean-list flex ">
@@ -23,9 +25,10 @@
         </div>
 
     </header>
-    <main class="container">
+    <div class="container">
+    <main>
 
-        <div class="card container flex flex-col flex-wrap">
+        <div class="card flex flex-col flex-wrap">
             <img class="card-image flex" src="img/Layer_2.png" alt="">
             <div class="card-data flex flex-col flex-wrap space-between">
                 <h2 class="card-title">Duis aute irure dolor in
@@ -37,53 +40,64 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
-                <button class="card-read-more-btn">Continue Reading</button>
+                <button class="card-read-more-btn"><span id="regular">Continue Reading</span><span id="hover">Continue Reading &#8594;</span></button>
             </div>
         </div>
-<!--    
-        <div class="card">
-            <img class="card-image" src="img/Layer_3.png" alt="">
-            <h2 class="card-title">Duis aute irure dolor in
-                henderit in voluptate.</h2>
-            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
-            </p>
-            <button class="card-read-more-btn">Continue Reading</button>
+        <div class="card flex flex-col flex-wrap">
+            <img class="card-image flex" src="img/Layer_3.png" alt="">
+            <div class="card-data flex flex-col flex-wrap space-between">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-text ">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex
+                    ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="card-read-more-btn"><span id="regular">Continue Reading</span><span id="hover">Continue Reading &#8594;</span></button>
+            </div>
         </div>
 
-        <div class="card">
-            <img class="card-image" src="img/Layer_4.png" alt="">
-            <h2 class="card-title">Duis aute irure dolor in
-                henderit in voluptate.</h2>
-            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="card flex flex-col flex-wrap">
+            <img class="card-image flex" src="img/Layer_4.png" alt="">
+            <div class="card-data flex flex-col flex-wrap space-between">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-text ">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex
+                    ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
-            </p>
-            <button class="card-read-more-btn">Continue Reading</button>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="card-read-more-btn"><span id="regular">Continue Reading</span><span id="hover">Continue Reading &#8594;</span></button>
+                
+            </div>
         </div>
-        <div class="cards-pagination">
-            <div class="cards-pagination-previous"> &#8592; Previous</div>
-            <div class="cards-pagination-next">Next &#8594;</div>
-        </div> -->
+
+        <div class="cards-pagination flex flex-row space-between align-center">
+            <div class="cards-pagination-previous"><a href="#">&#8592; Previous</a></div>
+            <div class="cards-pagination-next"><a href="#"> Next &#8594;</a></div>
+        </div> 
 
     </main>
+</div>
     <footer class="footer">
-        <div class="footer-content container">
-            <div class="logo logo-footer">Blogin<span class="logo-dot">.</span></div>
+        <div class="footer-content flex flex-col align-center">
+            <div class="logo logo-footer"><a href="#">Blogin<span class="logo-dot">.</a></span></div>
 
             <p class="footer-copyright">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
                 Pixelhint.com
             </p>
 
-            <div class="footer-social-links">
-                <ul>
-                    <li><a href="#">facebook-icon</a></li>
-                    <li><a href="#">twitter-icon</a></li>
-                    <li><a href="#">be-icon</a></li>
-                    <li><a href="#">basketball-icon</a></li>
+            <div class="footer-social-links flex flex-col ">
+                <ul class="clean-list flex flex-row ">
+                    <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="behance"><i class="fab fa-behance"></i></a></li>
+                    <li><a href="#" class="dribbble"><i class="fab fa-dribbble"></i></a></li>
                 </ul>
             </div>
         </div>
