@@ -102,15 +102,16 @@ img {
 
 .main-nav a:hover {
     font-size: 1.1rem;
+    background-color: #1f1f1f;
 }
 
 .main-nav a:last-of-type {
     box-shadow: -1px 0 0 #1d1d1d, inset -1px 0 0 #1d1d1d;
 }
 
-.main-nav .current-page {
-    border-bottom: 6px solid #57c93b;
+.main-nav #current-page {
     color: #57c93b;
+    box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a ;
 }
 
 /* MAIN */
