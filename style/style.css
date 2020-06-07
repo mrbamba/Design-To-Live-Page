@@ -47,6 +47,8 @@ img {
     width: 100%;
 }
 
+
+
 /* HEADER */
 
 .main-header {
@@ -99,46 +101,43 @@ img {
     -o-transition: all .4s ease-in;
     
 }
-
+.main-nav li:last-of-type {
+    box-shadow: 1px 0 0 #1d1d1d;
+}
 .main-nav a:hover {
-    font-size: 1.1rem;
+    box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a ;
     background-color: #1f1f1f;
 }
 
-.main-nav a:last-of-type {
-    box-shadow: -1px 0 0 #1d1d1d, inset -1px 0 0 #1d1d1d;
-}
 
-.main-nav #current-page {
+
+.main-nav .current-page {
     color: #57c93b;
     box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a ;
+    cursor: default;
 }
 
 /* MAIN */
 
 .card:first-child {
     padding-top: 80px;
-    height: 24.1875rem;
 }
 
 .card {
     margin-bottom: 80px;
-    height: 19.1875rem;
-    flex-grow: 2;
+    max-width: 100%;
 }
 
 .card-image {
     padding-right: 21px;
     max-width: 50%;
-    flex-grow: 1;
+    object-fit: cover;
 }
 
 .card-data {
     width: 50%;
     font-weight: 400;
     padding-left: 21px;
-    height: 307px;
-    flex-grow: 1;
 }
 
 .card-title {
@@ -152,36 +151,38 @@ img {
 .card-text {
     line-height: 1.25rem;
     color: #606060;
-    margin: 0;
 }
-
+.card-text:last-of-type{
+    flex-grow: 1;
+}
 .card-read-more-btn {
-    width: 186px;
-    height: 40px;
-    border-radius: 50px;
+    align-self: flex-start;
+    padding: 0 28px;
+    line-height: 40px;
+    font-weight: 700;
+    border-radius: 5em;
     border: 2px solid #c2c2c2;
     background-color: #fff;
     color: #c2c2c2;
     letter-spacing: 0.48px;
-    padding: 0rem;
+    padding: 0 1.75em;
     cursor: pointer;
     position: relative;
-    transition: all .4s ease-in;
-    -webkit-transition: all .4s ease-in;
-    -moz-transition: all .4s ease-in;
-    -o-transition: all .4s ease-in;
+    transition: padding .4s ease-in;
+
     outline: none;
 }
 
 .card-read-more-btn:hover {
     color: #58c93a;
     border: 2px solid #58c93a;
-    width: 204px;
+    padding-inline-end: 50px;
 }
 
 .card-read-more-btn:hover::after {
 content:" →";
 position: absolute;
+right: 1.25em;
 }
 
 
