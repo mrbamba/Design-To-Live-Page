@@ -165,10 +165,12 @@ img {
     letter-spacing: 0.48px;
     padding: 0rem;
     cursor: pointer;
+    position: relative;
     transition: all .4s ease-in;
     -webkit-transition: all .4s ease-in;
     -moz-transition: all .4s ease-in;
     -o-transition: all .4s ease-in;
+    outline: none;
 }
 
 .card-read-more-btn:hover {
@@ -177,21 +179,11 @@ img {
     width: 204px;
 }
 
-.card-read-more-btn span#regular {
-    display: inline;
+.card-read-more-btn:hover::after {
+content:" →";
+position: absolute;
 }
 
-.card-read-more-btn:hover span#regular {
-    display: none;
-}
-
-.card-read-more-btn span#hover {
-    display: none;
-}
-
-.card-read-more-btn:hover span#hover {
-    display: inline;
-}
 
 .cards-pagination {
     height: 74px;
