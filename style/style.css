@@ -293,7 +293,7 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: center;
@@ -307,7 +307,7 @@ img {
     background-color: #fff;
     border-radius: 4px;
     text-align: center;
-    position: relative;
+    position: fixed;
 }
 
 .join-details input {
@@ -483,6 +483,5 @@ img {
     .join-details {
         width: 100%;
         height: 100%;
-        position: fixed;
     }
 }
